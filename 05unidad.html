@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <a href="index.html">Regresar al Menú Principal</a>
+
+        <h1>Flujo normal y display</h1>
+        <p>El flujo normal (normal flow) es la forma en que el navegador coloca los elementos por defecto, antes de aplicar cualquier layout especial: de arriba hacia abajo y, dentro de cada línea, de izquierda a derecha.</p>
+        <p>La propiedad display define cómo se comporta cada elemento dentro de ese flujo. Los valores más importantes son:</p>
+        <ul>
+            <li>block: ocupa todo el ancho disponible y empieza en una línea nueva. Acepta width, height, margin y padding en todos los lados. Ejemplos: div, p, h1, section.</li>
+            <li>inline: solo ocupa el ancho de su contenido y no rompe la línea. Ignora width y height, y el margen vertical no tiene efecto. Ejemplos: span, a, strong.</li>
+            <li>inline-block: se coloca en línea como un inline, pero acepta width, height y márgenes como un block.</li>
+            <li>none: el elemento desaparece por completo y no ocupa espacio. (Distinto de visibility: hidden, que lo oculta pero conserva su espacio).</li>
+            <li>flex y grid: activan sistemas de maquetación avanzados (se ven en la Parte 4).</li>
+        </ul>
+        <h2>Ejemplos de uso</h2>
+        <h3>Ejemplo 1: Elementos block vs. inline</h3>
+        <div class="bloque">Soy un div (block)</div>
+        <div class="bloque">Otro div (block)</div>
+        <span class="linea">Soy un span (inline)</span>
+        <span class="linea">Otro span (inline)</span>
+        <h3>Ejemplo 2: Cambiar el tipo de display</h3>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+            <ul class="menu">
+                <li>Uno</li>
+                <li>Dos</li>
+                <li>Tres</li>
+            </ul>
+        <h3>Ejemplo 3: inline-block (lo mejor de ambos)</h3>
+        <div class="caja" >1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+        <h3>Ejemplo 4: display: none vs. visibility: hidden</h3>
+        <div class="item">Elemento 1</div>
+        <div class="item oculto-none">Elemento 2 (display: none)</div>
+        <div class="item">Elemento 3</div>
+        <div class="item oculto-visibility">Elemento 4 (visibility: hidden)</div>
+        <div class="item">Elemento 5</div>
+        <h3>Ejemplo 5: Contenedor que “rompe” el flujo con float y su solución</h3>
+        <div class="contenedor">
+        <img class="imagen" src="https://picsum.photos/120" alt="Foto">
+        <p>Este texto rodea la imagen porque la imagen está flotando a la izquierda. Es un uso clásico de float para texto envolvente alrededor de imágenes.</p>
+        </div>
+        <p class="siguiente">Párrafo siguiente</p>
+        <br>
+        <br>
+        <hr>
+        <video src="videos/2026-10-11 18-53-52.mp4" controls autoplay muted></video>
+    </center>
+</body>
+</html>

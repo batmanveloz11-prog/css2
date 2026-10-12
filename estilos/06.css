@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+.fila { display: flex; width: 200px; padding: 15px; margin-bottom: 10px; background: #aed6f1; }
+
+.desplazada {
+  position: relative;
+  top: 10px;
+  left: 40px;
+  background: #f9e79f;
+}
+
+
+
+.producto {
+  position: relative;     
+  width: 220px;
+  padding: 30px 20px 20px;
+  border: 2px solid #34495e;
+  border-radius: 8px;
+}
+
+.etiqueta {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+
+.subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #27ae60;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.contenido { height: 1200px; }
+
+.titulo-pegajoso {
+  position: sticky;
+  top: 0;                 
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  margin: 0;
+}
+
+p { padding: 40px 15px; }
+
+
+.escenario {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background: #ecf0f1;
+}
+
+.capa { position: absolute; width: 150px; height: 100px; padding: 10px; color: white; }
+.fondo  { top: 20px; left: 20px; background: #e74c3c; z-index: 1; }
+.frente { top: 60px; left: 80px; background: #2980b9; z-index: 2; }  
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+  background: #f1c40f;
+  padding: 8px 14px;
+  z-index: 3;
+}

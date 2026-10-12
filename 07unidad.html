@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/07.css">
+</head>
+<body>
+    <center>
+        <a href="index.html">Regresar al Menú Principal</a>
+
+        <h1>Flexbox</h1>
+        <p>Contenido del Flexbox</p>
+        <p>Flexbox (Flexible Box Layout) es un sistema de maquetación pensado para distribuir elementos en una sola dimensión: en fila o en columna. Se activa con display: flex en el contenedor (el contenedor flex), y sus hijos directos pasan a ser elementos flex.</p>
+        <p>Cada contenedor flex tiene dos ejes:</p>
+        <ul>
+            <li>Eje principal (main axis): la dirección en que se colocan los elementos (horizontal por defecto).</li>
+            <li>Eje secundario (cross axis): perpendicular al principal.</li>
+        </ul>
+        <p>Propiedades del contenedor:</p>
+        <ul>
+            <li>flex-direction: dirección del eje principal (row, row-reverse, column, column-reverse).</li>
+            <li>justify-content: alinea los elementos en el eje principal (flex-start, center, flex-end, space-between, space-around, space-evenly).</li>
+            <li>align-items: alinea en el eje secundario (stretch, flex-start, center, flex-end).</li>
+            <li>flex-wrap: permite que los elementos pasen a otra línea (nowrap, wrap).</li>
+            <li>gap: espacio entre elementos.</li>
+        </ul>
+        <p>Propiedades de los elementos:</p>
+        <ul>
+            <li>flex-grow: cuánto crece el elemento para ocupar espacio libre.</li>
+            <li>flex-shrink: cuánto se encoge si falta espacio.</li>
+            <li>flex-basis: tamaño inicial antes de repartir el espacio.</li>
+            <li>flex: abreviatura de las tres anteriores (flex: 1 = crece por igual).</li>
+            <li>align-self: alinea un elemento individual en el eje secundario.</li>
+            <li>order: cambia el orden visual.</li>
+        </ul>
+        <h2>Ejemplos de uso</h2>
+        <h3>Ejemplo 1: Fila básica con gap</h3>
+        <div class="contenedor">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <h3>Ejemplo 2: Distribución con justify-content</h3>
+        <div class="caja entre">
+            <span>A</span><span>B</span><span>C</span>
+        </div>
+        <h3>Ejemplo 3: Centrado perfecto (horizontal y vertical)</h3>
+        <div class="pantalla">
+        <div class="mensaje">¡Centrado!</div>
+        </div>
+        <h3>Ejemplo 4: Barra de navegación con margin-left: auto</h3>
+        <nav class="barra">
+        <div class="logo">MiSitio</div>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#" class="ultimo">Contacto</a>
+        </nav>
+        <h3>Ejemplo 5: Elementos que crecen con flex y columnas responsivas con wrap</h3>
+        <div class="layout">
+        <aside class="lateral">Lateral (fijo)</aside>
+        <main class="principal">Principal (ocupa el resto)</main>
+        </div>
+
+        <div class="tarjetas">
+        <div class="tarjeta">1</div>
+        <div class="tarjeta">2</div>
+        <div class="tarjeta">3</div>
+        <div class="tarjeta">4</div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <video src="videos/2026-10-11 19-16-20.mp4"></video>
+    </center>
+</body>
+</html>

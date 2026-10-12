@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/06.css">
+</head>
+<body>
+    <center>
+        <a href="index.html">Regresar al Menú Principal</a>
+
+        <h1>Posicionamiento</h1>
+        <p>La propiedad position permite sacar un elemento del flujo normal o desplazarlo respecto a una referencia. Se complementa con top, right, bottom, left y z-index.</p>
+        <ul>
+            <li>static: valor por defecto. Flujo normal; top, left, etc. no tienen efecto.</li>
+            <li>relative: se desplaza respecto a su propia posición original, pero conserva su espacio en el flujo. Además, sirve como referencia para hijos con absolute.</li>
+            <li>absolute: sale del flujo (no deja espacio) y se posiciona respecto al ancestro posicionado más cercano (cualquiera con position distinto de static). Si no existe, usa la página.</li>
+            <li>fixed: sale del flujo y se posiciona respecto a la ventana del navegador, por lo que no se mueve al hacer scroll.</li>
+            <li>sticky: híbrido; se comporta como relative hasta que el scroll alcanza un umbral y entonces se “pega” como fixed.</li>
+            <li>z-index: controla el orden de apilamiento (qué elemento queda encima). Solo funciona en elementos posicionados.</li>
+        </ul>
+        <h2>Ejemplos de uso</h2>
+        <h3>Ejemplo 1: Posicionamiento relativo</h3>
+        <div class="fila">Caja A</div>
+        <div class="fila desplazada">Caja B (relative)</div>
+        <div class="fila">Caja C</div>
+        <h3>Ejemplo 2: absolute dentro de un contenedor relative (insignia)</h3>
+        <div class="producto">
+        <span class="etiqueta">NUEVO</span>
+        <h3>Audífonos</h3>
+        <p>$499 MXN</p>
+        </div>
+        <h3>Ejemplo 3: fixed (botón siempre visible)</h3>
+        <div style="height: 1500px;">Haz scroll hacia abajo...</div>
+        <a href="#" class="subir">⬆ Subir</a>
+        <h3>Ejemplo 4: sticky (encabezado que se pega al hacer scroll)</h3>
+        <div class="contenido">
+            <h2 class="titulo-pegajoso">Título que se pega arriba</h2>
+            <p>Texto largo 1...</p>
+            <p>Texto largo 2...</p>
+            <p>Texto largo 3...</p>
+            <p>Texto largo 4...</p>
+            <p>Texto largo 5...</p>
+        </div>
+        <h3>Ejemplo 5: Centrado absoluto y z-index</h3>
+            <div class="escenario">
+            <div class="capa fondo">Fondo (z-index: 1)</div>
+            <div class="capa frente">Frente (z-index: 2)</div>
+            <div class="centrado">Centrado</div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <video src="videos/2026-10-11 19-09-42.mp4" controls autoplay muted></video>
+    </center>
+</body>
+</html>

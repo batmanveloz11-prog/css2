@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.contenedor {
+  display: flex;         
+  gap: 15px;
+  background: #ecf0f1;
+  padding: 15px;
+}
+
+.item {
+  background: #3498db;
+  color: white;
+  padding: 25px 35px;
+  border-radius: 6px;
+}
+
+
+.caja span { background: #e67e22; color: white; padding: 10px 20px; }
+.entre { justify-content: space-between; }
+
+
+.pantalla {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  height: 300px;
+  background: #2c3e50;
+  
+}
+
+.mensaje {
+  background: #f1c40f;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+.barra {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #2c3e50;
+  padding: 15px 25px;
+}
+
+.barra a { color: white; text-decoration: none; }
+.logo { color: #f1c40f; font-weight: bold; font-size: 1.3rem; margin-right: auto; }
+
+
+
+.layout { display: flex; gap: 10px; margin-bottom: 30px; }
+.lateral   { flex: 0 0 150px; background: #aed6f1; padding: 20px; }  
+.principal { flex: 1;         background: #a9dfbf; padding: 20px; }  
+
+.tarjetas { display: flex; flex-wrap: wrap; gap: 10px; }
+.tarjeta {
+  flex: 1 1 200px;     
+  background: #d7bde2;
+  padding: 30px;
+  text-align: center;
+}   

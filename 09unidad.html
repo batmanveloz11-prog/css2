@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/09.css">
+</head>
+<body>
+    <center>
+        <a href="index.html">Regresar al Menú Principal</a>
+
+        <h1>Animaciones</h1>
+        <section>
+    <h2>1. Transiciones (<code>transition</code>)</h2>
+    <p>Animan el cambio entre dos estados (por ejemplo, normal y <code>:hover</code>). Necesitan un disparador.</p>
+    <ul>
+      <li><code>transition-property</code>: qué propiedad se anima (<code>all</code>, <code>background</code>, <code>transform</code>...).</li>
+      <li><code>transition-duration</code>: duración (ej. <code>0.3s</code>).</li>
+      <li><code>transition-timing-function</code>: curva de velocidad (<code>ease</code>, <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>).</li>
+      <li><code>transition-delay</code>: retraso antes de empezar.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. Animaciones con <code>@keyframes</code></h2>
+    <p>Definen una secuencia de pasos y se ejecutan solas, sin disparador.</p>
+    <ul>
+      <li><code>@keyframes nombre</code>: declara los pasos con <code>from</code>/<code>to</code> o porcentajes (<code>0%</code>, <code>50%</code>, <code>100%</code>).</li>
+      <li><code>animation-name</code>: qué keyframes usar.</li>
+      <li><code>animation-duration</code>: duración de un ciclo.</li>
+      <li><code>animation-timing-function</code>: curva de velocidad.</li>
+      <li><code>animation-delay</code>: retraso inicial.</li>
+      <li><code>animation-iteration-count</code>: número de repeticiones (<code>infinite</code> para bucle).</li>
+      <li><code>animation-direction</code>: <code>normal</code>, <code>reverse</code>, <code>alternate</code>.</li>
+      <li><code>animation-fill-mode</code>: qué estilo conserva antes y después (<code>forwards</code> mantiene el estado final).</li>
+      <li><code>animation</code>: abreviatura de todas las propiedades anteriores.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Transformaciones (<code>transform</code>)</h2>
+    <p>Se usan mucho junto con las animaciones: <code>translate()</code>, <code>rotate()</code>, <code>scale()</code>, <code>skew()</code>.</p>
+    
+    <div class="tip">
+      <strong>Consejo de rendimiento:</strong> Conviene animar <code>transform</code> y <code>opacity</code>, porque son las propiedades más fluidas para la GPU del navegador.
+    </div>
+  </section>
+        <h3>Ejemplos en uso</h3>
+        <h3>Ejemplo 1: Transicion de color y tamaño en hover</h3>
+        <button class="boton">Pasa el cursor</button>
+        <h3>Ejemplo 2: Animacion con keyframes basica</h3>
+        <div class="aparece">Aparezco al cargar la página</div>
+        <h3>Ejemplo 3:Animacion infinita</h3>
+        <div class="corazon">❤</div>
+        <h3>Ejemplo 4: Rotación continua</h3>
+        <div class="cargando"></div>
+        <h3>Ejemplo 5: Movimiento de ida y vevuelta con varios pasos</h3>
+        <div class="pista">
+            <div class="pelota"></div>
+        </div>
+        <br>
+    <br>
+    <hr>
+    <video src="videos/2026-10-11 19-36-11.mp4" controls autoplay muted></video>
+    </center>
+</body>
+</html>

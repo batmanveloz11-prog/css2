@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/04.css">
+</head>
+<body>
+    <center>
+        <a href="index.html">Regresar al Menú Principal</a>
+
+        <h1>Sombras en css</h1>
+
+        <p>CSS tiene dos propiedades principales para sombras:
+
+            box-shadow: sombra alrededor de la caja del elemento.
+            text-shadow: sombra del texto.
+
+            La sintaxis de box-shadow es:</p>
+        <ul>
+            <li>x / y: mueven la sombra horizontal y verticalmente (admiten negativos).</li>
+            <li>desenfoque (blur): cuanto mayor, más suave es la sombra. 0 da un borde nítido.</li>
+            <li>expansión (spread): agranda o reduce la sombra (opcional).</li>
+            <li>color: normalmente con transparencia (rgba) para un aspecto natural.</li>
+            <li>inset: al inicio, convierte la sombra en interior.</li>
+        </ul>
+        <p>text-shadow funciona igual pero sin expansión ni inset. Para sombras que respeten formas transparentes (como PNG o SVG) existe filter: drop-shadow(). Se pueden poner varias sombras separadas por comas.</p>
+        <h2>Ejemplos de uso</h2>
+        <h3>Ejemplo 1: Sombra básica de caja</h3>
+        <div class="tarjeta">Tarjeta con sombra</div>
+        <h3>Ejemplo 2: Niveles de elevación</h3>
+        <div class="nivel n1">Nivel 1</div>
+        <div class="nivel n2">Nivel 2</div>
+        <div class="nivel n3">Nivel 3</div>
+        <h3>Ejemplo 3: Sombra interior (inset) y sombra de color</h3>
+        <div class="interior">Sombra interior</div>
+        <div class="neon">Resplandor de color</div>
+        <h3>Ejemplo 4: Sombra de texto (text-shadow)</h3>
+        <h1 class="texto sombra">Sombra simple</h1>
+        <h1 class="texto relieve">Efecto relieve</h1>
+        <h1 class="texto brillo">Efecto brillo</h1>
+        <h3>Ejemplo 5: Sombra al pasar el cursor (hover) con transición</h3>
+        <div class="boton-sombra">Pasa el cursor sobre mí</div>
+        <br>
+        <br>
+        <hr>
+        <video src="videos/2026-10-11 18-39-18.mp4" controls autoplay muted></video>
+    </center>
+</body>
+</html>

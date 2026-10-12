@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.tarjeta {
+  width: 250px;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+body { background: #f5f5f5; padding: 30px; }
+
+.nivel {
+  display: inline-block;
+  width: 130px;
+  padding: 30px 10px;
+  margin: 15px;
+  background: white;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.n1 { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+.n2 { box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); }
+.n3 { box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); }
+
+
+.interior, .neon { width: 250px; padding: 30px; margin: 20px; text-align: center; }
+
+.interior {
+  background: #ecf0f1;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.neon {
+  background: #111;
+  color: #0ff;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;   /* dos sombras superpuestas */
+}
+
+
+.texto { font-size: 2.5rem; padding: 15px; margin: 0; }
+
+.sombra  { text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4); }
+
+.relieve {
+  background: #bdc3c7;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 0 #7f8c8d, 2px 2px 0 #7f8c8d, 3px 3px 0 #7f8c8d;
+}
+
+.brillo {
+  background: #2c3e50;
+  color: white;
+  text-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f;
+}
+
+
+.boton-sombra {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.boton-sombra:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  transform: translateY(-4px);     /* se "levanta" ligeramente */
+}

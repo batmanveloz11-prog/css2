@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/08.css">
+</head>
+<body>
+    <center>
+        <a href="index.html">Regresar al Menú Principal</a>
+
+        <h1>Grid</h1>
+        <p>Contenido del Grid</p>
+        <p>CSS Grid es un sistema de maquetación en dos dimensiones: filas y columnas a la vez. Se activa con display: grid en el contenedor. Es ideal para estructuras de página completas y galerías, mientras que Flexbox suele ser mejor para componentes en una sola dirección. Ambos se complementan.</p>
+        <p>Propiedades del contenedor:</p>
+        <ul>
+            <li>grid-template-columns: define las columnas (200px 1fr 1fr, repeat(3, 1fr)).</li>
+            <li>grid-template-rows: define las filas.</li>
+            <li>gap (row-gap, column-gap): espacio entre celdas.</li>
+            <li>grid-template-areas: define la estructura con nombres.</li>
+            <li>justify-items / align-items: alinean el contenido dentro de cada celda.</li>
+        </ul>
+        <p>Propiedades de los elementos:</p>
+        <ul>
+            <li>grid-column / grid-row: posición y tamaño en la cuadrícula (grid-column: 1 / 3).</li>
+            <li>justify-self / align-self: alinean el contenido dentro de la celda individual.</li>
+        </ul>
+        <h2>Ejemplos de uso</h2>
+        <h3>Ejemplo 1: Cuadricula basica</h3>
+        <div class="rejilla">
+            <div>1</div><div>2</div><div>3</div>
+            <div>4</div><div>5</div><div>6</div>
+        </div>
+        <h3>Ejemplo 2: Columnas con tamaños mixtos</h3>
+        <div class="mixta">
+            <div>Fija 150px</div>
+            <div>1fr</div>
+            <div>2fr</div>
+        </div>
+        <h3>Ejemplo 3: Elementos que ocupan múltiples celdas</h3>
+        <div class="galeria">
+            <div class="a">Grande (2x2)</div>
+            <div class="b">B</div>
+            <div class="c">C</div>
+            <div class="d">D (ancho completo)</div>
+        </div>
+        <h3>Ejemplo 4: Plantilla de pagina con grid-template-areas</h3>
+        <div class="pagina">
+            <header>Encabezado</header>
+            <nav>Menú</nav>
+            <main>Contenido principal</main>
+            <aside>Publicidad</aside>
+            <footer>Pie de página</footer>
+        </div>
+        <h3>Ejemplo 5: Galería responsiva con auto-fit y minmax</h3>
+        <div class="auto">
+            <div>1</div><div>2</div><div>3</div><div>4</div>
+            <div>5</div><div>6</div><div>7</div><div>8</div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <video src="videos/2026-10-11 19-22-28.mp4" controls autoplay muted></video>
+    </center>
+</body>
+</html>

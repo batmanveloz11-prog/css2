@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.color { padding: 20px; margin-bottom: 10px; color: white; }
+
+.hex  { background-color: #e74c3c; }
+.rgb  { background-color: rgb(46, 204, 113); }
+.hsl  { background-color: hsl(210, 80%, 50%); }
+.rgba { background-color: rgba(142, 68, 173, 0.5); }  /* el 0.5 es la opacidad */
+
+
+.portada {
+  height: 250px;
+  background-image: url("https://picsum.photos/800/400");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;      /* cubre todo el espacio recortando lo que sobre */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.patron {
+  height: 200px;
+  background-image: url("https://picsum.photos/50");
+  background-repeat: repeat;        /* prueba: repeat-x, repeat-y, no-repeat */
+  background-size: 50px 50px;       /* tamaño de cada mosaico */
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+
+.degradado { padding: 40px; margin-bottom: 15px; color: white; text-align: center; }
+
+.lineal   { background: linear-gradient(to right, #3498db, #9b59b6); }
+.radial   { background: radial-gradient(circle, #f1c40f, #e67e22); }
+.diagonal { background: linear-gradient(45deg, #e74c3c, #f1c40f, #2ecc71); }
+
+
+.multiple {
+  height: 300px;
+  padding: 30px;
+  color: white;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* capa superior: oscurece */
+    url("https://picsum.photos/1000/600") center / cover no-repeat;
+  background-attachment: fixed;   /* la imagen queda fija al hacer scroll */
+}
