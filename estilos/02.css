@@ -4,7 +4,7 @@
     text-align: center;
 }
 .borde-basico {
-  border: 3px solid #e74c3c;   /* grosor | estilo | color */
+  border: 3px solid #e74c3c; 
   padding: 20px;
   width: 250px;
 }
@@ -52,4 +52,16 @@
 .boton:focus {
   outline: 3px solid #3498db;
   outline-offset: 4px;   /* separa el contorno del borde; no afecta el tamaño de la caja */
+}
+
+img.img-borde {
+  border: 5px solid #e74c3c;
+  padding: 10px;
+  width: 300px;
+}
+.fondo-borde {
+  border: 5px solid #27ae60;
+  padding: 20px;
+  width: 300px;
+   background: linear-gradient(45deg, #e74c3c, #f1c40f, #2ecc71);
 }
