@@ -40,7 +40,7 @@ body { background: #f5f5f5; padding: 30px; }
   background: #111;
   color: #0ff;
   border: 2px solid #0ff;
-  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;   /* dos sombras superpuestas */
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;   
 }
 
 
@@ -74,5 +74,15 @@ body { background: #f5f5f5; padding: 30px; }
 
 .boton-sombra:hover {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
-  transform: translateY(-4px);     /* se "levanta" ligeramente */
+  transform: translateY(-4px);  
+}
+
+.sombrargb {
+  width: 250px;
+  padding: 30px;
+  margin: 20px;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(46, 204, 113, 0.7), 0 0 30px rgba(12, 37, 184, 0.5);
 }

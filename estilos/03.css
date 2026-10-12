@@ -8,7 +8,7 @@
 .hex  { background-color: #e74c3c; }
 .rgb  { background-color: rgb(46, 204, 113); }
 .hsl  { background-color: hsl(210, 80%, 50%); }
-.rgba { background-color: rgba(142, 68, 173, 0.5); }  /* el 0.5 es la opacidad */
+.rgba { background-color: rgba(142, 68, 173, 0.5); }  
 
 
 .portada {
@@ -16,7 +16,7 @@
   background-image: url("https://picsum.photos/800/400");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;      /* cubre todo el espacio recortando lo que sobre */
+  background-size: cover;     
   color: white;
   display: flex;
   align-items: center;
@@ -27,8 +27,8 @@
 .patron {
   height: 200px;
   background-image: url("https://picsum.photos/50");
-  background-repeat: repeat;        /* prueba: repeat-x, repeat-y, no-repeat */
-  background-size: 50px 50px;       /* tamaño de cada mosaico */
+  background-repeat: repeat;     
+  background-size: 50px 50px;       
   padding: 20px;
   color: white;
   text-shadow: 1px 1px 3px black;

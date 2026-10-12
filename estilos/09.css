@@ -62,7 +62,7 @@
   width: 50px;
   height: 50px;
   border: 6px solid #ecf0f1;
-  border-top-color: #3498db;    /* solo un lado de otro color */
+  border-top-color: #3498db;    
   border-radius: 50%;
   animation: girar 1s linear infinite;
 }
@@ -90,5 +90,4 @@
   height: 50px;
   border-radius: 50%;
   animation: rebotar 4s ease-in-out infinite alternate;
-  /* alternate: al terminar, regresa en sentido inverso */
 }

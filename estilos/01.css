@@ -21,7 +21,7 @@ p { background: #d6eaf8; margin-bottom: 15px; }
 
 .centrada {
   width: 400px;
-  margin: 0 auto;      /* 0 arriba/abajo, auto a izquierda/derecha */
+  margin: 0 auto;      
   padding: 20px;
   background-color: #fadbd8;
   text-align: center;

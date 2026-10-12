@@ -51,7 +51,7 @@
 
 .boton:focus {
   outline: 3px solid #3498db;
-  outline-offset: 4px;   /* separa el contorno del borde; no afecta el tamaño de la caja */
+  outline-offset: 4px;   
 }
 
 img.img-borde {
